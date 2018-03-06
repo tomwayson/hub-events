@@ -1,6 +1,10 @@
-# preact material app
+# Hub Events
 
-Super performant `Material` app for preact world using [preact-material-components](https://github.com/prateekbh/preact-material-components)
+An example application to show querying [ArcGIS Hub](http://www.esri.com/arcgis/products/arcgis-hub) Events using [@esri/arcgis-rest-feature-service](https://esri.github.io/arcgis-rest-js/api/feature-service/)
+
+## About
+
+This was built using the super performant `Material` app for preact world using [preact-material-components](https://github.com/prateekbh/preact-material-components)
 
 ## CLI Commands
 

@@ -24,7 +24,7 @@ export default class App extends Component {
 				<Router onChange={this.handleRoute}>
 					<Home path="/" />
 					<EventDetails path="event/:eventId" />
-					<Profile path="/profile/" user="me" />
+					<Profile path="/profile/" user="twayson" />
 					<Profile path="/profile/:user" />
 				</Router>
 			</div>
