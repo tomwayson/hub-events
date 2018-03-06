@@ -31,6 +31,9 @@ export default class EventDetails extends Component {
 			content = (
 				<div>
 					<h1>{ event.title }</h1>
+					<p>Start: { new Date(event.startDate).toString() }</p>
+					<p>End: { new Date(event.endDate).toString() }</p>
+					<h3>Description</h3>
 					<p>{ event.description }</p>
 				</div>
 			);
