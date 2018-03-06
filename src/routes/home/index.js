@@ -4,6 +4,7 @@ import TextField from 'preact-material-components/TextField';
 import 'preact-material-components/List/style.css';
 import 'preact-material-components/TextField/style.css';
 import { bind, debounce } from 'decko';
+import { route } from 'preact-router';
 
 import style from './style';
 
@@ -83,8 +84,7 @@ export default class Home extends Component {
 
 	goToEvent(eventId) {
 		console.log(eventId);
-		// TODO: route to event details
-		// route(path);
+		route(`/event/${eventId}`, true);
 	};
 
 	render({}, { search, eventFeatures }) {
