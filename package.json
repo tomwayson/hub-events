@@ -29,6 +29,9 @@
     "preact-cli": "^2.0.0"
   },
   "dependencies": {
+    "@esri/arcgis-rest-common-types": "^1.1.1",
+    "@esri/arcgis-rest-feature-service": "^1.1.1",
+    "@esri/arcgis-rest-request": "^1.1.1",
     "decko": "^1.2.0",
     "preact": "^8.2.1",
     "preact-compat": "^3.17.0",

@@ -83,7 +83,6 @@ export default class Home extends Component {
 	}
 
 	goToEvent(eventId) {
-		console.log(eventId);
 		route(`/event/${eventId}`, true);
 	};
 
