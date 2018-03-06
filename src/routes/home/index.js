@@ -30,11 +30,14 @@ export default class Home extends Component {
 
 	queryEvents(search) {
 		const featureLayerUrl = 'https://servicesqa.arcgis.com/97KLIFOSt5CxbiRI/ArcGIS/rest/services/Hub%20Events%20(public)/FeatureServer/0';
+		// TODO: base this on current time
+		const now = '2018-03-06 13:00:00';
 		const queryParams = {
-			outFields: ['OBJECTID', 'title', 'startDate']
+			outFields: ['OBJECTID', 'title', 'startDate'],
+			where: `startDate > DATE '${now}'`
 		};
 		if (search) {
-			queryParams.where = `title LIKE '%${search}%'`;
+			queryParams.where = queryParams.where + ` AND title LIKE '%${search}%'`;
 		}
 		return queryFeatures({ url: featureLayerUrl, params: queryParams });
 	};
